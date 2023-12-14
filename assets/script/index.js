@@ -7,7 +7,7 @@ npm init -y
 */
 
 /*--------------------------------------------------------------*/
-/*  function: getLocation  & Add a map                          */
+/*   Add a map with Canada Location                             */
 /*--------------------------------------------------------------*/
 //Token
 mapboxgl.accessToken = 'pk.eyJ1Ijoicm9zYW1hcmlhbnVuZXpyaXZlcmEiLCJhIjoiY2xxMWJiOXlhMDd1MzJtbzViNnZqd214dSJ9.Ots2kI7dKHtA2K0eNTp7aA';
@@ -17,7 +17,7 @@ const mapDiv = document.getElementById('map');
 let map = new mapboxgl.Map({
     container: mapDiv,
     style: "mapbox://styles/rosamarianunezrivera/clq3adbbb018601pgh9ajhaes",
-    center: [-106.346771, 56.130366],
+    center: [-106.346771, 56.130366], //Set Canada's location
     pitch: 25,
     zoom: 4,
 });
@@ -44,20 +44,10 @@ function track() {
         const actualPosition = [longitude, latitude];
         setNewCenter(actualPosition);
 
-        /*
-        //Creating a Map
-        let map = new mapboxgl.Map({
-            container: mapDiv,
-            style: "mapbox://styles/rosamarianunezrivera/clq3adbbb018601pgh9ajhaes",
-            center: actualPosition,
-            pitch: 40,
-            zoom: 16
-        });*/
-
         // Add market to user's location
         const marker = new mapboxgl.Marker({
-            color: "#bc3713",
-            draggable: true,
+            color: "#278295",
+            draggable: false,
         }).setLngLat(actualPosition).addTo(map);
     }
 
@@ -69,7 +59,7 @@ function track() {
 }
 
 /*--------------------------------------------------------------*/
-/*                   Even Listener Button Tracker               */
+/*  Even Listener Button Track                                  */
 /*--------------------------------------------------------------*/
 const btnTracker = document.querySelector('.button-tracker');
 btnTracker.addEventListener("click", () => {
@@ -87,6 +77,8 @@ function errorHandler(error) {
 if (!mapboxgl.supported()) {
     console.log('WebGL is not supported by your browser');
 }
+
+
 
 
 
