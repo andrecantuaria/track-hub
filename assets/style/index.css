@@ -91,7 +91,7 @@
     outline: none;
     border-style: none;
     vertical-align: baseline;
-    font-family:inherit;
+    font-family: inherit;
     box-sizing: border-box;
 }
 
@@ -104,7 +104,7 @@ body {
     font-weight: 400;
     text-rendering: geometricPrecision;
     background-color: var(--app-white);
-    overflow:auto;
+    overflow: auto;
     line-height: 1.5;
 }
 
@@ -118,9 +118,9 @@ main {
 }
 
 .flexbox {
-    display:flex;
+    display: flex;
 }
- 
+
 h1 {
     font-size: 55px;
     font-weight: 400;
@@ -144,7 +144,7 @@ h3 {
 }
 
 p {
-    font-size:16px;
+    font-size: 16px;
     font-weight: 500;
     color: var(--app-dark-gray);
 }
@@ -161,7 +161,7 @@ a {
 
 /*--------------HEADER----------------------*/
 header {
-    background-color:var(--app-white);
+    background-color: var(--app-white);
     display: flex;
     height: 60px;
     overflow: hidden;
@@ -203,7 +203,7 @@ nav ul li a:hover {
 
 }
 
-nav ul li + li {
+nav ul li+li {
     margin-left: 0px;
 }
 
@@ -216,7 +216,7 @@ nav ul li + li {
 
 /*-----------------MAIN---------------------*/
 
- /*-------------HERO SECTION---------------*/
+/*-------------HERO SECTION---------------*/
 .hero {
     position: relative;
     width: 100%;
@@ -232,7 +232,7 @@ nav ul li + li {
     width: 100%;
     height: 100%;
     object-fit: cover;
-   
+
 }
 
 .overlay {
@@ -242,7 +242,7 @@ nav ul li + li {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0); 
+    background: rgba(0, 0, 0, 0);
 }
 
 .content-hero {
@@ -261,7 +261,7 @@ nav ul li + li {
     font-weight: 600;
     color: var(--app-white);
     letter-spacing: 0.4px;
-    line-height: 1.6;    
+    line-height: 1.6;
 }
 
 .content-hero p {
@@ -270,8 +270,8 @@ nav ul li + li {
     font-weight: 600;
     color: var(--app-white);
     letter-spacing: 0.4px;
-    line-height: 1.2;  
-    text-align: left; 
+    line-height: 1.2;
+    text-align: left;
 }
 
 .container_output {
@@ -282,13 +282,13 @@ nav ul li + li {
 }
 
 /*--------------ABOUT SECTION------------------*/
-.one-about { 
+.one-about {
     background-color: none;
 }
 
-.two-about { 
-    background-image: url('../img/about-picture.jpg'); 
-    background-size: cover; 
+.two-about {
+    background-image: url('../img/about-picture.jpg');
+    background-size: cover;
     background-position: center;
     height: 310px;
     margin: 0;
@@ -341,7 +341,7 @@ nav ul li + li {
 .featured-icon h1 {
     color: var(--app-white);
     font-size: 100px;
-    line-height: 1.2;  
+    line-height: 1.2;
 }
 
 .featured-icon h1:hover {
@@ -368,18 +368,18 @@ nav ul li + li {
 .row-location {
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
 }
 
-.one-location { 
+.one-location {
     background-color: none;
 }
 
-.two-location { 
-    margin: 0; 
+.two-location {
+    margin: 0;
 }
 
 .column-location {
@@ -399,7 +399,7 @@ nav ul li + li {
 .contact {
     display: inline-block;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     flex-wrap: wrap;
     gap: 20px;
     width: 100%;
@@ -429,7 +429,7 @@ footer {
     text-align: left;
     line-height: 60px;
     vertical-align: baseline;
-} 
+}
 
 .font-awesome i {
     font-size: 20px;
@@ -471,9 +471,11 @@ footer {
     nav {
         display: none;
     }
+
     header div {
         width: 100%;
     }
+
     .logo {
         text-align: center;
     }
@@ -482,7 +484,7 @@ footer {
 /*-----HERO SECTION -----*/
 
 @media (max-width: 1200px) {
-    .content-video h1 { 
+    .content-video h1 {
         font-size: 50px;
         line-height: 1.2;
     }
@@ -490,37 +492,40 @@ footer {
 
 /* Title Text - 992px and down */
 @media (max-width: 992px) {
-    .content-video h1 { font-size: 42px;
+    .content-video h1 {
+        font-size: 42px;
         line-height: 1.2;
-     }
+    }
 }
 
 /* Title Text 768px and down (tablets) */
 @media (max-width: 768px) {
-    .content-video h1 { 
+    .content-video h1 {
         font-size: 28px;
         line-height: 1.2;
-     }
-     h2 {
+    }
+
+    h2 {
         font-size: 16px;
-     }
+    }
 }
-    
+
 /* Title Text 480px and down  */
 @media (max-width: 480px) {
-    .content-video h1 { 
+    .content-video h1 {
         font-size: 25px;
         line-height: 1.2;
-     }
-     h2 {
+    }
+
+    h2 {
         font-size: 14px;
-     }
+    }
 }
 
 /*-----ABOUT SECTION -----*/
 @media screen and (max-width: 1000px) {
     .column-about {
-        width: 100%;    
+        width: 100%;
     }
 }
 
@@ -530,16 +535,47 @@ footer {
         display: inline-block;
         justify-content: center;
     }
+
     .featured-column {
-        margin-bottom: 50px;;
+        margin-bottom: 50px;
+        ;
     }
+
     .bottom-featured-column {
         margin-bottom: 0;
     }
 }
 
+/*------------------------------------------------------------*/
+/*                        Map                                 */
+/*------------------------------------------------------------*/
+.button-tracker {
+    width: 140px;
+    height: 46px;
+    background-color: var(--app-turquoise);
+    border-radius: 6px;
+    font-style: 1.6rem;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 600;
+}
 
+.container-map {
+    width: 100%;
+    margin-inline: auto;
+}
 
+#map {
+    width: 100%;
+    height: 550px;
+}
 
+#title-map {
+    color: var(--app-dark-gray);
+    height: 46px;
+}
 
-
+.mapboxgl-ctrl-logo,
+.mapboxgl-ctrl-attrib-inner {
+    display: none !important;
+}
