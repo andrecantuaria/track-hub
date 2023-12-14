@@ -16,10 +16,20 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500;600&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,500;1,6..12,500&family=Playball&family=Roboto+Mono:wght@300;400;500;600&display=swap">
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,400;0,6..12,500;1,6..12,500&family=Playball&family=Roboto+Mono:wght@300;400;500;600&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
         <!-- Scripts-->
-        <script src="./assets/script/index.js" defer></script>
+        <script src="./assets/script/index.js" type="module"></script>
+        <!-- Maps links-->
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' />
+        <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v2.8.1/mapbox-gl.css' />
+        <script
+            src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.min.js'></script>
+        <link rel='stylesheet'
+            href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.7.0/mapbox-gl-geocoder.css'
+            type='text/css' />
     </head>
     <body> 
         <!-- Header-->
@@ -133,57 +143,63 @@
                     <div class="container">
         
                         <div class="row-location location-text">
-                            <div class="column-location one-project">
-                                <h2>Your location</h2>
-                            </div>
-                            <div class="column-location two-project">
-                               
-                            </div>
+                            <button class="button-tracker">Track</button>
                         </div>
-                    </div>
-                </div>
-            </section>
-            <!-- Contact Section-->
-            <section>
-                <div class="white-background" id="contact">
-                    <div class="container">
-                        <div class="contact">
-                            <h2><i class="fa-solid fa-comments"></i>Contact us</h2>
-                            <p>Feel free to reach out to me through any of these channels:</p>
-                            
-                            <div class="btn-side-by-side">
-                                <div class="btn btn-blue">
-                                    <a href="mailto:andrecantuaria@gmail.com"><i class="fa-solid fa-square-envelope"></i> Email</a>
-                                </div>
-                                <div class="btn btn-gray">
-                                    <a href="https://www.linkedin.com/in/andrecantuaria/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
-                                </div>
-                                <div class="btn btn-gray">
-                                    <a href="https://github.com/andrecantuaria" target="_blank"><i class="fa-brands fa-square-github"></i> GitHub</a>
-                                </div>
+                        <div id="map">
+                        </div>
 
-                            </div>  
-                        </div>
                     </div>
-                </div>
-            </section>
-        </main>
-        <!-- Footer-->
-        <footer>
-            <div class="container flexbox">
-                <div class="social-icons">
-                    <p class="font-awesome"> 
-                        <a href="https://www.linkedin.com/in/andrecantuaria/" target="_blank"><i class="fa-brands fa-linkedin"></i></a> 
-                        <a href="https://github.com/andrecantuaria" target="_blank"><i class="fa-brands fa-square-github"></i></a>
-                        <a href="https://www.instagram.com/andre.cantuaria/" target="_blank" ><i class="fa-brands fa-instagram"></i></a>
-                     </p>
-                </div>
-                <div class="copyright"> 
-                    <p>
-                        &copy;2023 Andr&eacute; Cantu&aacute;ria
-                    </p>
                 </div>
             </div>
-        </footer>      
-    </body>
+        </section>
+        <!-- Contact Section-->
+        <section>
+            <div class="grayish-blue-background" id="contact">
+                <div class="container">
+                    <div class="contact">
+                        <h2><i class="fa-solid fa-comments"></i>Contact us</h2>
+                        <p>Feel free to reach out to me through any of these channels:</p>
+
+                        <div class="btn-side-by-side">
+                            <div class="btn btn-blue">
+                                <a href="mailto:andrecantuaria@gmail.com"><i class="fa-solid fa-square-envelope"></i>
+                                    Email</a>
+                            </div>
+                            <div class="btn btn-gray">
+                                <a href="https://www.linkedin.com/in/andrecantuaria/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i> Linkedin</a>
+                            </div>
+                            <div class="btn btn-gray">
+                                <a href="https://github.com/andrecantuaria" target="_blank"><i
+                                        class="fa-brands fa-square-github"></i> GitHub</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer-->
+    <footer>
+        <div class="container flexbox">
+            <div class="social-icons">
+                <p class="font-awesome">
+                    <a href="https://www.linkedin.com/in/andrecantuaria/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/andrecantuaria" target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.instagram.com/andre.cantuaria/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </p>
+            </div>
+            <div class="copyright">
+                <p>
+                    &copy;2023 Andr&eacute; Cantu&aacute;ria
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
 </html>
